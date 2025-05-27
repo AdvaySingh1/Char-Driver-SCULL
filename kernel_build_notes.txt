@@ -1,0 +1,15 @@
+KERNEL MODULE BUILD SYSTEM NOTES
+================================
+
+make command flags:
+-----------------
+-C /path/to/dir : Changes to the specified directory before executing make
+M=$(PWD)        : Specifies the directory containing module source code (current directory)
+
+uname command flags:
+------------------
+-r              : Outputs the kernel release version (e.g., "5.15.0-58-generic")
+
+make targets:
+-----------
+modules         : Compiles code as loadable kernel modules rather than building into kernel
